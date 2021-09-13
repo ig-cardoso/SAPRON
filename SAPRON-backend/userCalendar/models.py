@@ -17,7 +17,7 @@ class Controle(models.Model):
     limpeza = models.ForeignKey('Limpeza', on_delete=models.CASCADE, related_name='limpeza')
 
     def __str__(self):
-        return self.id_controle
+        return str(self.id_controle)
 
     class Meta:
         # manager = True
@@ -33,7 +33,7 @@ class Checkin(models.Model):
     status_checkin = models.CharField(max_length=7, choices=STATUS)
 
     def __str__(self):
-        return self.id_checkin
+        return str(self.id_checkin)
 
     class Meta:
         # manager = True
@@ -49,7 +49,7 @@ class Checkout(models.Model):
     status_checkout = models.CharField(max_length=7, choices=STATUS)
 
     def __str__(self):
-        return self.id_checkout
+        return str(self.id_checkout)
 
     class Meta:
         # manager = True
@@ -64,7 +64,7 @@ class Limpeza(models.Model):
     status_limpeza = models.CharField(max_length=7, choices=STATUS)
 
     def __str__(self):
-        return self.id_limpeza
+        return str(self.id_limpeza)
 
     class Meta:
         # manager = True
