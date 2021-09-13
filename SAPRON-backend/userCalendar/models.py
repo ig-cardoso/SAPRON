@@ -33,7 +33,7 @@ class Checkin(models.Model):
     status_checkin = models.CharField(max_length=7, choices=STATUS)
 
     def __str__(self):
-        return self.responsavel_checkin
+        return self.id_checkin
 
     class Meta:
         # manager = True
@@ -49,7 +49,7 @@ class Checkout(models.Model):
     status_checkout = models.CharField(max_length=7, choices=STATUS)
 
     def __str__(self):
-        return self.responsavel_checkout
+        return self.id_checkout
 
     class Meta:
         # manager = True
@@ -58,12 +58,10 @@ class Checkout(models.Model):
 
 
 class Limpeza(models.Model):
-    
     id_limpeza = models.AutoField(primary_key=True)
     hora_limpeza = models.TimeField(auto_now=False, auto_now_add=False, blank=False, null=True)
     data_limpeza = models.DateField(auto_now=False, auto_now_add=False, blank=False)
     status_limpeza = models.CharField(max_length=7, choices=STATUS)
-
 
     def __str__(self):
         return self.id_limpeza
@@ -71,4 +69,4 @@ class Limpeza(models.Model):
     class Meta:
         # manager = True
         db_table = 'Limpeza'
-        verbose_name_plural = u'Limpezas' 
+        verbose_name_plural = u'Limpezas'
