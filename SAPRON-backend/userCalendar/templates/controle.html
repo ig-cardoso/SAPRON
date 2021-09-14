@@ -9,6 +9,71 @@
         <title>Controle</title>
     </head>
     <body>
+        <div>
+            <ul class="task-list">
+                {% for controle in controles %}
+                    <li>
+                        {{ controle.checkin.hora_checkin }}
+                        {{ controle.checkin.data_checkin }}
+                        {{ controle.checkin.responsavel_checkin }}
+                        {{ controle.checkin.status_checkin }}
+                        <br>
+                        {{ controle.checkout.hora_checkout }}
+                        {{ controle.checkout.data_checkout }}
+                        {{ controle.checkout.responsavel_checkout }}
+                        {{ controle.checkout.status_checkin }}
+                        <br>
+                        {{ controle.limpeza.hora_limpeza }}
+                        {{ controle.limpeza.data_limpeza }}
+                        {{ controle.limpeza.status_checkin }}
+                    </li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div> 
+            <h2>checkins</h2>
+            <ul>
+                {% for cin in checkins %}
+                <li>
+                    Código: {{ cin.id_checkin }} <br>
+                    Hora: {{ cin.hora_checkin }} <br>
+                    Data: {{ cin.data_checkin }} <br>
+                    Responsável: {{ cin.responsavel_checkin }} <br>
+                </li>    
         
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            <h2>checkouts</h2>
+            <ul>
+                {% for cout in checkouts %}
+                <li>
+                    Código: {{ cout.id_checkout }} <br>
+                    Hora: {{ cout.hora_checkout }} <br>
+                    Data: {{ cout.data_checkout }} <br>
+                    Responsável: {{ cout.responsavel_checkout }} <br>
+                </li>
+        
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            <h2>Limpezas</h2>
+            <ul>
+                {% for limp in limpezas %}
+                <li>
+                    Código: {{ limp.id_limpeza }} <br>
+                    Hora: {{ limp.hora_limpeza }} <br>
+                    Data: {{ limp.data_limpeza }} <br>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
     </body>
 </html>
