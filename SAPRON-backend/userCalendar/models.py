@@ -10,19 +10,19 @@ STATUS = (
 		('feito', 'Feito')
 	)
 
-class Controle(models.Model):
-    id_controle = models.AutoField(primary_key=True)
+class Locacao(models.Model):
+    id_locacao = models.AutoField(primary_key=True)
     checkin = models.ForeignKey('Checkin', on_delete=models.CASCADE, related_name='checkin')
     checkout = models.ForeignKey('Checkout', on_delete=models.CASCADE, related_name='checkout')
     limpeza = models.ForeignKey('Limpeza', on_delete=models.CASCADE, related_name='limpeza')
 
     def __str__(self):
-        return str(self.id_controle)
+        return str(self.id_locacao)
 
     class Meta:
         # manager = True
-        db_table = 'Controle'
-        verbose_name_plural = u'Controles' 
+        db_table = 'Locacao'
+        verbose_name_plural = u'Locacoes' 
 
 
 class Checkin(models.Model):
