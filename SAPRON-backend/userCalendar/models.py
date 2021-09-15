@@ -58,7 +58,8 @@ class Checkout(models.Model):
 
 
 class Limpeza(models.Model):
-    id_limpeza = models.AutoField(primary_key=True)
+    # id_limpeza = models.AutoField(primary_key=True)
+    id_limpeza = models.IntegerField(primary_key=True, blank=False,)
     hora_limpeza = models.TimeField(auto_now=False, auto_now_add=False, blank=False, null=True)
     data_limpeza = models.DateField(auto_now=False, auto_now_add=False, blank=False)
     status_limpeza = models.CharField(max_length=7, choices=STATUS)

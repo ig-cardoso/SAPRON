@@ -19,15 +19,14 @@ def calendar(request):
 
     airbnb_request = requests.get("http://localhost:3001/teste")
     airbnb_dados = json.loads(airbnb_request.content)
-    print(airbnb_dados[0]['hora_limpeza'])
+    
 
-    hora_limpeza_request = airbnb_dados[0]['hora_limpeza']
-    data_limpeza_request = airbnb_dados[0]['data_limpeza']
-    status_limpeza_request = airbnb_dados[0]['status_limpeza']
-
-    teste = Limpeza.objects.create(hora_limpeza=hora_limpeza_request,
-                                    data_limpeza=data_limpeza_request,
-                                    status_limpeza=status_limpeza_request)
+    # Add ou atulza o dado de limpeza no banco de daos
+    for dado_airbnb in airbnb_dados:
+        teste = Limpeza.objects.update_or_create(hora_limpeza=dado_airbnb['hora_limpeza'],
+                                                data_limpeza=dado_airbnb['data_limpeza'],
+                                                status_limpeza=dado_airbnb['status_limpeza'],
+                                                id_limpeza=dado_airbnb['id'])
     
 
     return render(request, 'controle.html', {'locacao': locacao,

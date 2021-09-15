@@ -1,33 +1,57 @@
 {
-    "checkin": [
-        {
-        "id": 1,
-        "codigo_reserva": "HMYDPRK5FS",
-        "data_checkin": "10/03/2021",
-        "horario_checkin": "14:00",
-        "endereco": "AV. Búzios 1800, Jererê internacional, Florianópolis-SC",
-        "cep": "89650-100",
-        "nome_usuario": "Gabriela da Silva",
-        "numero_usuario": "+55 47 999876544",
-        "quatidade_adultos": 4,
-        "quatidade_criancas": 0,
-        "quantidade_pet": 1,
-        "quantidade_diarias": 9,
-        "valor_a_pagar": 4124.15,
-        "ja_pago": false
-        },
-        {
-        
-        }
-    ],
-
-    "checkout": [{
-
-    }],
-
-    "teste": [{
-        "hora_limpeza": "11:11",
-        "data_limpeza": "2011-11-11",
-        "status_limpeza": "Feito"
-    }]
+  "locacao": [],
+  "checkin": [
+    {
+      "id": 1,
+      "codigo_reserva": "HMYDPRK5FS",
+      "data_checkin": "10/03/2021",
+      "horario_checkin": "14:00",
+      "endereco": "AV. Búzios 1800, Jererê internacional, Florianópolis-SC",
+      "cep": "89650-100",
+      "nome_usuario": "Gabriela da Silva",
+      "numero_usuario": "+55 47 999876544",
+      "quatidade_adultos": 4,
+      "quatidade_criancas": 0,
+      "quantidade_pet": 1,
+      "quantidade_diarias": 9,
+      "valor_a_pagar": 4124.15,
+      "ja_pago": false
+    },
+    {}
+  ],
+  "checkout": [
+    {}
+  ],
+  "teste": [
+    {
+      "id": 1,
+      "hora_limpeza": "11:11",
+      "data_limpeza": "2011-10-11",
+      "status_limpeza": "Feito"
+    },
+    {
+      "hora_limpeza": "12:12",
+      "data_limpeza": "2021-08-22",
+      "status_limpeza": "Feito",
+      "id": 2
+    },
+    {
+      "hora_limpeza": "12:12",
+      "data_limpeza": "2021-08-22",
+      "status_limpeza": "Feito",
+      "id": 3
+    },
+    {
+      "hora_limpeza": "13:13",
+      "data_limpeza": "2013-03-13",
+      "status_limpeza": "Feito",
+      "id": 4
+    },
+    {
+      "hora_limpeza": "10:10",
+      "data_limpeza": "2000-01-02",
+      "status_limpeza": "Fazendo",
+      "id": 5
+    }
+  ]
 }
