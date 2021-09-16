@@ -1,10 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import manager
+from djmoney.models.fields import MoneyField  # É preciso instalar esse módulo
 
-from djmoney.models.fields import MoneyField
+
 # Create your models here.
-
 
 STATUS = (
 		('fazendo', 'Fazendo'),
@@ -75,8 +75,8 @@ class Checkout(models.Model):
         verbose_name_plural = u'Checkouts' 
 
 class Limpeza(models.Model):
-    # id_limpeza = models.AutoField(primary_key=True)
-    id_limpeza = models.IntegerField(primary_key=True, blank=False)
+    id_limpeza = models.AutoField(primary_key=True)
+    # id_limpeza = models.IntegerField(primary_key=True, blank=False)  # id manual
     hora_limpeza = models.TimeField(auto_now=False, auto_now_add=False, blank=False, null=True)
     data_limpeza = models.DateField(auto_now=False, auto_now_add=False, blank=False)
     status_limpeza = models.CharField(max_length=7, choices=STATUS)

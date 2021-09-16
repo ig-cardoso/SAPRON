@@ -74,7 +74,7 @@
             "locacao":[
                 {
                     "id": 1,
-                    "codigo_reserva": "AAAAAAAA",
+                    "codigo_reserva": "HMYDPRK5FS",
                     "endereco": "AV. Búzios 1800, Jererê internacional, Florianópolis-SC",
                     "cep": "89650-100",
                     "nome_usuario": "Gabriela da Silva",
@@ -105,41 +105,10 @@
                 },
                 {
                     "id": 2,
-                    "codigo_reserva": "GGGGGGGG",
-                    "endereco": "São Paulo, 21 de M, Rua massa",
+                    "codigo_reserva": "HMYDPRK5FS",
+                    "endereco": "AV. Búzios 1800, Jererê internacional, Florianópolis-SC",
                     "cep": "89650-100",
-                    "nome_usuario": "Flávia da Silva",
-                    "numero_usuario": "+55 47 999876544",
-                    "quatidade_adultos": 4,
-                    "quatidade_criancas": 0,
-                    "quantidade_pet": 1,
-                    "quantidade_diarias": 9,
-                    "valor_a_pagar": 3124.15,
-                    "ja_pago": false,
-                    "checkin": [
-                        {
-                            "id": 2,
-                            "data_checkin": "10/03/2021",
-                            "horario_checkin": "14:00",
-                            "status": "Fazendo"
-                        }
-                    ],
-                    
-                    "checkout": [
-                        {
-                            "id": 2,
-                            "data_checkou": "10/04/2021",
-                            "hora_checkou": "14:30",
-                            "status": "Feito"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "codigo_reserva": "FFFFFFF",
-                    "endereco": "AV. Búzios 1800, Jererê internacional, São Paulo-SP",
-                    "cep": "89650-100",
-                    "nome_usuario": "João da Silva",
+                    "nome_usuario": "Gabriela da Silva",
                     "numero_usuario": "+55 47 999876544",
                     "quatidade_adultos": 4,
                     "quatidade_criancas": 0,
@@ -149,39 +118,8 @@
                     "ja_pago": false,
                     "checkin": [
                         {
-                            "id": 3,
-                            "data_checkin": "10/02/2021",
-                            "horario_checkin": "15:00",
-                            "status": "Fazendo"
-                        }
-                    ],
-                    "checkout": [
-                        {
-                            "id": 3,
-                            "data_checkout": "10/04/2021",
-                            "hora_checkout": "14:30",
-                            "ja_pago": false,
-                            "status": "Feito"
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "codigo_reserva": "JJJJJJJJJ",
-                    "endereco": "Brasília, Tag-DF",
-                    "cep": "89650-100",
-                    "nome_usuario": "Não sei da Silva",
-                    "numero_usuario": "+55 47 55154144",
-                    "quatidade_adultos": 4,
-                    "quatidade_criancas": 2,
-                    "quantidade_pet": 1,
-                    "quantidade_diarias": 9,
-                    "valor_a_pagar": 8124.15,
-                    "ja_pago": false,
-                    "checkin": [
-                        {
-                            "id": 4,
-                            "data_checkin": "10/03/2024",
+                            "id": 1,
+                            "data_checkin": "10/03/2021",
                             "horario_checkin": "14:00",
                             "status": "Fazendo"
                         }
@@ -189,7 +127,7 @@
                     
                     "checkout": [
                         {
-                            "id": 4,
+                            "id": 1,
                             "data_checkou": "10/04/2021",
                             "hora_checkou": "14:30",
                             "status": "Feito"

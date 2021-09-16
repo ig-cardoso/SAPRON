@@ -9,7 +9,52 @@
         <title>Controle</title>
     </head>
     <body>
-        <h1>Checkin</h1>
+        <hr>
+        {% for loc in locacao %}
+            <li>id: {{loc.id}}</li>
+            <li>codigo_reserva: {{loc.codigo_reserva}}</li>
+            <li>endereco: {{loc.endereco}}</li>
+            <li>cep: {{loc.cep}}</li>
+            <li>nome_usuario: {{loc.nome_usuario}}</li>
+            <li>numero_usuario: {{loc.numero_usuario}}</li>
+            <li>quatidade_adultos: {{loc.quatidade_adultos}}</li>
+            <li>quatidade_criancas: {{loc.quatidade_criancas}}</li>
+            <li>quantidade_pet: {{loc.quantidade_pet}}</li>
+            <li>quantidade_diarias: {{loc.quantidade_diarias}}</li>
+            <li>valor_a_pagar: {{loc.valor_a_pagar}}</li>
+            <li>ja_pago: {{loc.ja_pago}}</li>
+
+            <h2>checkin</h2>
+            {% for checkin in loc.checkin %}
+                <li>id: {{checkin.id}}</li>
+                <li>data_checkin: {{checkin.data_checkin}}</li>
+                <li>horario_checkin: {{checkin.horario_checkin}}</li>
+                <li>status: {{checkin.status}}</li>
+            {% endfor %}
+
+            <h2>checkout</h2>
+            {% for checkout in loc.checkout %}
+                <li>id: {{checkout.id}}</li>
+                <li>data_checkout: {{checkout.data_checkout}}</li>
+                <li>horario_checkout: {{checkout.horario_checkout}}</li>
+                <li>status: {{checkout.status}}</li>
+            {% endfor %}
+            <hr>
+        {% endfor %}
+
+
+
+        <h2>Limpezas</h2>
+        {% for limpeza in limpezas %}
+            <li>id: {{ limpeza.id_limpeza }}</li>
+            <li>hora_limpeza: {{ limpeza.hora_limpeza }}</li>
+            <li>data_limpeza: {{ limpeza.data_limpeza }}</li>
+            <li>status_limpeza: {{ limpeza.status_limpeza }}</li>
+        {% endfor %}
+        <hr>
+
+
+        <!-- <h1>Checkin</h1>
         {% for checkin in checkin_user %}
             <li>id: {{checkin.id}}</li>
             <li>codigo_reserva: {{checkin.codigo_reserva}}</li>
@@ -43,7 +88,7 @@
             <li>valor_a_pagar: {{checkout.valor_a_pagar}}</li>
             <li>ja_pago: {{checkout.ja_pago}}</li>
             <hr>
-        {% endfor %}
+        {% endfor %} -->
 
 
 
