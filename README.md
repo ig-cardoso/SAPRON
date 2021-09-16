@@ -63,7 +63,7 @@ Os models foram criados, embora por decisão de projeto optei por não armazenar
 
 ### Observações
 
-Não foi possível integrar, por fata de tempo, efetivamente o backend com fronte. Para testar o recebimento de dados e sugerido que acesse a seguinte rota: *localhost:8000/calendar_template*
+Não foi possível integrar, por fata de tempo, efetivamente o backend com fronte. Para testar o recebimento de dados e sugerido acesse a seguinte rota  a *localhost:8000/calendar_template/111* ou /222, que é refente o template  que está dentro do app userCalendar.
 
 ## Autor
 
@@ -71,5 +71,5 @@ Não foi possível integrar, por fata de tempo, efetivamente o backend com front
 
 ## License
 
-This project is licensed under an MIT license - see file [LICENSE.md](LICENSE.md) for more details.
+Este projeto está sob licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
 
