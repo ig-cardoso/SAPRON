@@ -11,6 +11,7 @@
     <body>
         <hr>
         {% for loc in locacao %}
+        <h1>Locação</h1>
             <li>id: {{loc.id}}</li>
             <li>codigo_reserva: {{loc.codigo_reserva}}</li>
             <li>endereco: {{loc.endereco}}</li>
@@ -24,7 +25,7 @@
             <li>valor_a_pagar: {{loc.valor_a_pagar}}</li>
             <li>ja_pago: {{loc.ja_pago}}</li>
 
-            <h2>checkin</h2>
+            <h3>checkin</h3>
             {% for checkin in loc.checkin %}
                 <li>id: {{checkin.id}}</li>
                 <li>data_checkin: {{checkin.data_checkin}}</li>
@@ -32,7 +33,7 @@
                 <li>status: {{checkin.status}}</li>
             {% endfor %}
 
-            <h2>checkout</h2>
+            <h3>checkout</h3>
             {% for checkout in loc.checkout %}
                 <li>id: {{checkout.id}}</li>
                 <li>data_checkout: {{checkout.data_checkout}}</li>
@@ -44,7 +45,7 @@
 
 
 
-        <h2>Limpezas</h2>
+        <h1>Limpezas</h1>
         {% for limpeza in limpezas %}
             <li>id: {{ limpeza.id_limpeza }}</li>
             <li>hora_limpeza: {{ limpeza.hora_limpeza }}</li>

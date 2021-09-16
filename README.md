@@ -1,21 +1,71 @@
 # SAPRON
 
-## Getting Started
+## Primeiros Passos
 
-Initially create a virtual environment using python's virtualenv. If you don't know, go to this [link](https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv).
+Inicialmente será necessitário a criação de um ambiente virtual, caso não saiba como criar, basta acessar o [link](https://www.treinaweb.com.br/blog/criando-ambientes-virtuais-para-projetos-python-com-o-virtualenv). Sugiro que crie uma virtualenv com seguinte nome: venv-SAPRON.
 
-### Prerequisites
+Também é necessário a instalação do **Node**, basta acessar o [link](https://nodejs.org/pt-br/download/package-manager/) e segui o passo a passo.  
 
-To run the program it is necessary to install all the requirements that are in the file requirements.txt.
+## Pré-requisitos
 
-### Installation
-Run the following command within the project directory:
+### Banckend (Django e outros módulos)
+
+Para rodar o projeto é preciso instalar as dependências que estão no arquivo requirements.txt dentro da virtual env. Com a virtualenv ativada digite o seguinte comando no terminal:
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
-## Author
+
+
+### Simulador da API do Airbnb (JSON Server)
+
+Para simular as requisições feitas a API do Airbnb foi utilizado o JSON Server. Para iniciar o simulador é preciso acessar o diretório pelo terminal, e em seguida digitar os seguintes comandos:
+
+```
+npm install
+```
+E seguinda digite o seguinte comando para iniciar:
+
+```
+npm start
+```
+
+### Frontend
+
+O frontend da aplicação foi construido em **Angular**, e para incia-lo é preciso acessar o diretório pelo terminal e executar os seguintes comandos:
+
+```
+npm install
+```
+
+ E em seguinda:
+
+```
+npm start
+```
+
+## Modelagem do banco de dados
+
+Os models foram criados, embora por decisão de projeto optei por não armazenar os dados que são recebidos da API do Airbnb, pois trata-se de dados mutáveis, e isso agregaria um custo a mais de armazenamento. Somente os dados das  *limpezas* são armazenada no banco de dados. Encontra-se, abaixo a relação entre os dados: 
+
+
+
+![Modelagem do banco de dados](/home/basis/Área de Trabalho/SAPRON/model_SAPRON-2.png)
+
+
+
+*Vale observar que havia outros campos e tabelas que poderiam ser implementados.*
+
+### Teste
+
+
+
+### Observações
+
+Não foi possível integrar, por fata de tempo, efetivamente o backend com fronte. Para testar o recebimento de dados e sugerido que acesse a seguinte rota: *localhost:8000/calendar_template*
+
+## Autor
 
 * **Igor Cardoso** - *Initial work* - [ig-cardoso](https://github.com/ig-cardoso)
 
