@@ -9,7 +9,45 @@
         <title>Controle</title>
     </head>
     <body>
-        <div>
+        <h1>Checkin</h1>
+        {% for checkin in checkin_user %}
+            <li>id: {{checkin.id}}</li>
+            <li>codigo_reserva: {{checkin.codigo_reserva}}</li>
+            <li>data_checkin: {{checkin.data_checkin}}</li>
+            <li>horario_checkin: {{checkin.horario_checkin}}</li>
+            <li>endereco: {{checkin.endereco}}</li>
+            <li>cep: {{checkin.cep}}</li>
+            <li>nome_usuario: {{checkin.nome_usuario}}</li>
+            <li>quatidade_adultos: {{checkin.quatidade_adultos}}</li>
+            <li>quatidade_criancas: {{checkin.quatidade_criancas}}</li>
+            <li>quantidade_pet: {{checkin.quantidade_pet}}</li>
+            <li>quantidade_diarias: {{checkin.quantidade_diarias}}</li>
+            <li>valor_a_pagar: {{checkin.valor_a_pagar}}</li>
+            <li>ja_pago: {{checkin.ja_pago}}</li>
+            <hr>
+        {% endfor %}
+
+        <h1>Checkout</h1>
+        {% for checkout in checkout_user %}
+            <li>id: {{checkout.id}}</li>
+            <li>codigo_reserva: {{checkout.codigo_reserva}}</li>
+            <li>data_checkout: {{checkout.data_checkout}}</li>
+            <li>horario_checkout: {{checkout.horario_checkout}}</li>
+            <li>endereco: {{checkout.endereco}}</li>
+            <li>cep: {{checkout.cep}}</li>
+            <li>nome_usuario: {{checkout.nome_usuario}}</li>
+            <li>quatidade_adultos: {{checkout.quatidade_adultos}}</li>
+            <li>quatidade_criancas: {{checkout.quatidade_criancas}}</li>
+            <li>quantidade_pet: {{checkout.quantidade_pet}}</li>
+            <li>quantidade_diarias: {{checkout.quantidade_diarias}}</li>
+            <li>valor_a_pagar: {{checkout.valor_a_pagar}}</li>
+            <li>ja_pago: {{checkout.ja_pago}}</li>
+            <hr>
+        {% endfor %}
+
+
+
+        <!-- <div>
             <ul class="task-list">
                 <h2>Locação</h2>
                 {% for controle in controles %}
@@ -74,7 +112,7 @@
                 </li>
                 {% endfor %}
             </ul>
-        </div>
+        </div> -->
 
     </body>
 </html>
