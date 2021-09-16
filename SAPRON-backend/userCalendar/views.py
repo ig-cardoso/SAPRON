@@ -25,7 +25,6 @@ def calendar(request, user_id):
 def calendar_template(request, user_id):
     airbnb_request = requests.get("http://localhost:3001/usuario/"+str(user_id))
     airbnb_dados = json.loads(airbnb_request.content)
- 
     limpezas = Limpeza.objects.all().order_by('data_limpeza').values().filter(user_id=user_id) 
     # Tem que filtrar pelo id do usuário
     
@@ -36,9 +35,8 @@ def calendar_template(request, user_id):
 def calendar_teste(request):
     airbnb_request = requests.get("http://localhost:3001/teste")
     airbnb_dados = json.loads(airbnb_request.content)
-    
-    for dado_airbnb in airbnb_dados:
-        
+
+    for dado_airbnb in airbnb_dados:        
         teste = Limpeza.objects.update_or_create(hora_limpeza=dado_airbnb['hora_limpeza'],
                                                 data_limpeza=dado_airbnb['data_limpeza'],
                                                 status_limpeza=dado_airbnb['status_limpeza'],
